@@ -1,0 +1,11 @@
+.Content {
+    z-index: 10;
+    width: 90%;
+    margin: auto;
+    min-height: 1200px;
+    overflow: auto;
+    /* background-color: wheat; */
+    background-color: var(--content-color);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 6px 1px black;
+}

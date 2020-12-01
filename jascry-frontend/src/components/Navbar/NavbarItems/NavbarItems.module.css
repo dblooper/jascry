@@ -1,0 +1,31 @@
+.NavbarItems {
+    margin: 0;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    height: 100%;
+}
+
+.Auth {
+        display: flex;
+        border: 1px solid var(--navbar-color);
+        border-radius: 2rem;
+        flex-flow: row;
+        box-sizing: unset;
+        margin: 0 2rem;
+        margin-right: 0;
+}
+
+@media(max-width: 800px) {
+    .NavbarItems, .Auth{
+        flex-direction: column;
+        margin: 1rem auto;
+        align-items: center;
+    }
+    .NavbarItems .MobileHide {
+        display: none;
+    }
+}
+

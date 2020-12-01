@@ -1,0 +1,31 @@
+.SectionTitle {
+    position: relative;
+    display: flex;
+    width: 30rem;
+    margin: 2rem 3rem 0.5rem 3rem;
+    box-sizing: border-box;
+}
+
+.TimelineTitle {
+    position: relative;
+    display: flex;
+    width: 15rem;
+    
+    margin: 1rem 1.5rem 0.25rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.SectionTitle h1, .TimelineTitle h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.BlogTitle h1{
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    font-size: 3rem;
+}
+
+.TimelineTitle h1 {
+    font-size: 1.5rem;
+}

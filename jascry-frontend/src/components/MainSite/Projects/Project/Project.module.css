@@ -1,0 +1,46 @@
+.Project {
+    position: relative;
+    margin: 0.8rem;
+}
+
+.Project section {
+    padding: 1rem;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: rgba(249,220,92,0.5);
+    transition: 0.5s ease-in-out;
+    transition-property: background-color, transform;
+
+}
+
+.Project section:hover {
+    transform: scale(1.04, 1.1);
+    background-color: var(--navbar-color);
+}
+
+.Project section p {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.Project section h3 {
+    font-weight: bold;
+}
+
+.Project section h4 {
+    text-decoration: underline;
+}
+
+.ProjectDetails {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 1rem;
+    display: flex;
+}
+
+.ProjectDetails p {
+    margin: 0;
+    padding: 0 0.5rem;
+}

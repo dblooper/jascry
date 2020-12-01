@@ -1,0 +1,36 @@
+.ZoomedPost {
+    margin: 0rem 4rem;
+    color: var(--jumbotron-main-color);
+    text-align: left;
+}
+
+.ZoomedPost hr {
+    margin: 0;
+    width: 30%;
+}
+
+.ZoomedPost .Content {
+    text-align: left;
+    width: 100%;
+}
+
+.ZoomedPost .Date {
+    color: var(--help-color);
+    display: flex;
+    margin: 0 1rem;
+}
+
+.ZoomedPost .Date p{
+    margin: 0 0.5rem;
+
+}
+
+pre {
+    background-color: rgba(249, 220, 92, 0.4);
+    color: brown;
+    margin: auto;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem
+}

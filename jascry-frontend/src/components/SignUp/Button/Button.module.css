@@ -1,0 +1,40 @@
+.Button {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 1px black;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font: inherit;
+    padding: 2rem;
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--navbar-color)
+}
+
+.Emphasize {
+    background: linear-gradient(to top left, rgba(234,4,112,0.50) 0%, rgba(14, 47, 87,1) 60%)
+
+}
+
+.Emphasize:hover {
+    /* transform: scale(0.9); */
+    animation-name: jup;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+.Emphasize:focus {
+    transform: scale(0.99);
+    box-shadow: none;
+}
+
+@keyframes jup {
+    0% {
+        background: linear-gradient(to top left, rgba(234,4,112,0.50) 0%, rgba(14, 47, 87,1) 60%)
+    }
+    100% {
+        background: linear-gradient(to top left, rgba(234,4,112,0.50) 0%, rgba(14, 47, 87,1) 100%)
+    }
+}

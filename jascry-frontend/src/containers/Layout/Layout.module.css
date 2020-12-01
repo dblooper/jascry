@@ -1,0 +1,70 @@
+.Layout {
+    width: 100%;
+}
+
+@media(min-width: 801px) { 
+.Content {
+    margin-top: -80px;
+    animation-name: unslideContent;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.SlideContent {
+    animation-name: slideContent;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideContent {
+    0% {
+        margin-top: -80px;
+    }
+    100% {
+        margin-top: -680px;
+    }
+}
+
+@keyframes unslideContent {
+    0% {
+        margin-top: -680px;
+    }
+    100% {
+        margin-top: -80px;
+    }
+}
+
+}
+@media(max-width: 800px) {
+    .Content {
+        margin-top: -300px;
+        animation-name: unslideContent;
+        animation-duration: 1.2s;
+        animation-fill-mode: forwards;
+    }
+    
+    .SlideContent {
+        animation-name: slideContent;
+        animation-duration: 1.2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes slideContent {
+        0% {
+            margin-top: -300px;
+        }
+        100% {
+            margin-top: -680px;
+        }
+    }
+    
+    @keyframes unslideContent {
+        0% {
+            margin-top: -680px;
+        }
+        100% {
+            margin-top: -300px;
+        }
+    }
+
+}

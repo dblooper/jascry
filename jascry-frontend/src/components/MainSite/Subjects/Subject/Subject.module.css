@@ -1,0 +1,25 @@
+.Subject {
+    margin: 0;
+    padding: 0;
+}
+
+.Subject section {
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: rgba(249,220,92,0.5);
+    box-shadow: 0 0 8px 0 #000000;
+    transition: 0.5s ease-in-out;
+    transition-property: background-color, transform;
+}
+
+.Subject section:hover {
+    transform: scale(1.05, 1.1);
+    background-color: var(--navbar-color);
+}
+
+.Subject section p {
+    font-size: 0.8rem;
+}

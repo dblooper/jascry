@@ -1,0 +1,46 @@
+.Border {
+    margin: 0 0.5rem;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.Arrow {
+    border: solid var(--navbar-color);
+    border-width: 0 3px 3px 0;
+    display: flex;
+    padding: 10px;
+}
+
+.Navy-blue {
+    border-color: var(--jumbotron-main-color);
+}
+
+.ArrowLeft {
+    transform: rotateZ(135deg);
+}
+
+.ArrowRight {
+    transform: rotateZ(-45deg);
+}
+
+.Border:hover {
+    animation-name: border;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border{
+    0% {
+        border: none;
+    }
+    100% {
+        border: 1px solid var(--navbar-color);
+    }
+}

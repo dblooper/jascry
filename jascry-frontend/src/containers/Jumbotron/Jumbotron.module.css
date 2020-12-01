@@ -1,0 +1,76 @@
+.Jumbotron {
+    margin: 0;
+}
+
+.JumbotronHeader {
+    z-index: inherit;
+    width: 100%;
+    margin: 0;
+    min-height: 780px;
+    background: linear-gradient(to top left, rgba(234,4,112,0.50) 0%, rgba(14, 47, 87,1) 60%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* box-shadow: 0px 0px 6px 1px black; */
+}
+
+.Dots {
+    position: relative;
+    top: -5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-sizing: content-box; */
+    animation-name: appearNode;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.Dot {
+    margin: 0.1rem;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+
+}
+
+.ActiveDot {
+    border: 2px solid var(--navbar-color);
+}
+
+.JumbotronHeader .JumbotronNode {
+    position: relative;
+    top: -6rem;
+    animation-name: appearNode;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.JumbotronHeader .NodesHidden, .DotsHidden {
+    animation-name: disappearNode;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappearNode {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
+
+@keyframes appearNode {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    } 
+}

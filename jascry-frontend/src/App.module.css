@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans');
+
+:root {
+    --background-color: #465362;
+    --jumbotron-main-color: #0e2f57;
+    --navbar-color: #F9DC5C;
+    --help-color: #ea0470;
+    --main-text-color: #011936;
+    --content-color: #FFFFFF;
+    --navbar-height: 70px;
+    
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: var(--background-color);
+    font-family: 'Electrolize', 'Arial';
+}

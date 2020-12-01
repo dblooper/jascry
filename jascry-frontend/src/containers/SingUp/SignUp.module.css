@@ -1,0 +1,43 @@
+.SignUp {
+    display: block;
+    margin: 0 auto;
+    animation-name: appear;
+    animation-duration: 1.5s;
+}
+
+.SignUp .InputElement {
+    margin: auto;
+    width: 40%;
+}
+
+.SignUp h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.SignUp h2 {
+    text-align: center;
+}
+
+.SignUp Button {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+.SignUp .InputElement { 
+    width: 100%;
+}
+}

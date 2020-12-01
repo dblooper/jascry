@@ -1,0 +1,38 @@
+.Logo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Odibee Sans', 'Arial';
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+}
+.Logo a {
+    text-decoration: none;
+    color: var(--navbar-color);
+}
+
+.Logo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.Logo div p {
+    margin: 0.2rem;
+}
+
+.Name {
+    font-size: 1.2rem;
+}
+
+.Logo:hover {
+    cursor: pointer; 
+}
+
+ .Logo:hover .LogoBracket {
+    color: var(--help-color); 
+}
+
+.LogoChange {
+    text-align: center;
+    color: var(--navbar-color);
+}
