@@ -12,10 +12,10 @@ export class Comment {
     @Column('text')
     body: string;
 
-    @Column()
+    @Column({default: 0})
     likes: number;
 
-    @Column()
+    @Column({default: 0})
     dislikes: number;
 
     @ManyToOne(type => User, user => user.comments)

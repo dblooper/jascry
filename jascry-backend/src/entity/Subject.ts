@@ -1,4 +1,5 @@
-import {Entity, PrimaryColumn,PrimaryGeneratedColumn, Column} from 'typeorm';
+import {Entity, PrimaryColumn,PrimaryGeneratedColumn, Column, OneToMany} from 'typeorm';
+import { Post } from './Post';
 
 @Entity()
 export class Subject {
@@ -8,5 +9,6 @@ export class Subject {
     @Column()
     descritpion: string;
 
-
+    @OneToMany(type => Post, post => post.subject)
+    posts: Post[];
 }
